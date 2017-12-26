@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script src="jquerys.js"></script>
+	<script src="jQuery.js"></script>
+	<script></script>
+</head>
+<body>
+	<div></div>
+	<div></div>
+	<div></div>
+	<div></div>
+	<div></div>
+</body>
+</html>
+<script>
+	$(function (){
+	let a = $('div');
+	a.html('this is div')
+		.css({
+			width:'200px',height:'200px',background:'red',
+			float:'left',margin:'20px','font-size':'20px',
+			textAlign:'center',lineHeight:'200px'
+		})
+		.click(function(){
+			let newobj = $(this)
+			newobj.css({backgroundColor:'green'})
+		})
+		.classadd('hot')
+		.removeadd('hot')
+		.setAttribute('aa','bb')
+		// .setAttribute('aa')
+
+
+		$('<div>').css({width:'100px',height:'100px',background:'pink'}).appendTo('div')
+		$('div').append('<div>')
+})
+
+</script>
+
+
+
